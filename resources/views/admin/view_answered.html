@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Houzz">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="The Food Pharmacy">
+<link rel="shortcut icon" href="images/favicon.png"/>
+<title>The Food Pharmacy</title>
+
+<!-- Bootstrap -->
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- bootstrap-progressbar -->
+<link href="css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+<!-- iCheck -->
+<link href="css/green.css" rel="stylesheet">
+<!-- Custom Theme Style -->
+<link href="css/custom.min.css" rel="stylesheet">
+<!-- Datatables -->
+<link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
+<link href="css/responsive.bootstrap.min.css" rel="stylesheet">
+<link href="css/scroller.bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-colorpicker.min.css" rel="stylesheet"/>
+</head>
+
+<body class="nav-md">
+<div class="container body">
+  <div class="main_container">
+    <div class="col-md-3 left_col">
+      <div class="left_col scroll-view">
+        <div class="navbar nav_title"> <a href="index.html" class="site_title"><i><img src="images/favicon.png" alt="logo"></i> <span>FoodPharmacy</span></a> </div>
+        <div class="clearfix"></div>
+        <!-- sidebar menu -->
+        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+          <div class="menu_section">
+            <ul class="nav side-menu">
+              <li><a href="index.html"><i class="fa fa-tachometer"></i> Home </a> </li>
+              <li><a href="admin_list.html"><i class="fa fa-user"></i> Admin & permissions </a> </li>
+              <li><a><i class="fa fa-table"></i> Product Management <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="product_list.html">Products</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-table"></i> Category Management <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="category_list.html">Categories</a></li>
+                  <li><a href="sub_category_list.html">Sub Categories</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-table"></i> Brand Management <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="brand_list.html">Brand</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-shopping-bag"> </i> Order Management<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="active_order.html"> Active Orders</a></li>
+                  <li><a href="completed_order.html"> Completed Orders</a></li>
+                  <li><a href="cancel_order.html"> Cancelled Orders</a></li>
+                  <li><a href="refunded_order.html"> Refunded Orders</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-table"></i> Reporting Management <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="by_product_list.html">By Product</a></li>
+                  <li><a href="by_sale_list.html">By Sales</a></li>
+                  <li><a href="by_customer.html">By Customer</a></li>
+                </ul>
+              </li>
+              <li><a href="discount_list.html"><i class="fa fa-table"></i> Discount </a> </li>
+              <li><a href="promo_code_list.html"><i class="fa fa-table"></i> Promo Code </a> </li>
+              <li><a><i class="fa fa-table"></i> Vendor Management <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="vendor_list.html">Vendor</a></li>
+                  <li><a><i class="fa fa-table"></i> Vendor Products <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="vendor_approved_product_list.html">Approved</a></li>
+                      <li><a href="vendor_cancelled_product_list.html">Cancelled</a></li>
+                      <li><a href="vendor_pending_product_list.html">Pending</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="vendor_payment.html">Vendor Payments</a></li>
+                  <li><a href="vendor_reporting.html">Vendor Reporting</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-table"></i> Coaching Management <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a><i class="fa fa-table"></i> Payments <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="payment_approved_list.html">Approved</a></li>
+                      <li><a href="payment_rejected_list.html">Rejected</a></li>
+                      <li><a href="payment_pending_list.html">Pending</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Diet Plan <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="view_diet_plan_list.html">View Diet Plan</a></li>
+                      <li><a href="user_request_list.html">User Request</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /sidebar menu --> 
+      </div>
+    </div>
+    
+    <!-- top navigation -->
+    <div class="top_nav">
+      <div class="nav_menu">
+        <nav>
+          <div class="nav toggle"> <a id="menu_toggle"><i class="fa fa-bars"></i></a> </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""> <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <img src="images/vendorprofile.png" alt="">Ibrahim Anwar <span class=" fa fa-angle-down"></span> </a>
+              <ul class="dropdown-menu dropdown-usermenu pull-right">
+                <li><a href="javascript:;"> Profile</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- /top navigation --> 
+    
+    <!-- page content -->
+    <div class="right_col" role="main">
+      <div class="page-title">
+        <div class="title_left">
+          <h3>Coaching Management</h3>
+          <h4 style="display:block;">View Answered</h4>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="row borderbotms">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="dbicons">
+              <h4>Name</h4>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="dbparahsss">
+              <p>Faizan Rasool</p>
+            </div>
+          </div>
+        </div>
+        <div class="row borderbotms">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="dbicons">
+              <h4>Address</h4>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="dbparahsss">
+              <p>Johar Town</p>
+            </div>
+          </div>
+        </div>
+        <div class="row borderbotms">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="dbicons">
+              <h4>Email</h4>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="dbparahsss">
+              <p>admin@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="row borderbotms">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="dbicons">
+              <h4>Whatsapp No</h4>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="dbparahsss">
+              <p>090078601</p>
+            </div>
+          </div>
+        </div>
+        <div class="row borderbotms">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="dbicons">
+              <h4>Zoom Id</h4>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="dbparahsss">
+              <p>iuglh845</p>
+            </div>
+          </div>
+        </div>
+        <div class="row borderbotms">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="dbicons">
+              <h4>Age</h4>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="dbparahsss">
+              <p>28</p>
+            </div>
+          </div>
+        </div>
+        <div class="row borderbotms">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="dbicons">
+              <h4>Gender</h4>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="dbparahsss">
+              <p>Male</p>
+            </div>
+          </div>
+        </div>
+        <div class="row borderbotms">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="dbicons">
+              <h4>Height</h4>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="dbparahsss">
+              <p>5.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-sm-10 col-md-12 col-xs-12">
+          <div class="dividers"></div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <div class="form-group">
+              <label>Diet Plan</label>
+              <select class="form-control" name="">
+                <option value="Diet Plan 1">Diet Plan 1</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <button type="submit" class="btn btn-success btn-lg pull-right">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page content --> 
+    
+    <!-- footer content -->
+    <footer>
+      <div class=""> Copyright © 2020 The Food Pharamacy. All rights reserved. </div>
+      <div class="pull-right"> Powered By <a href="https://greengrapez.com">Green Grapez <img src="images/greengrapez.png" alt="green grapez" style="width:5%;"></a> </div>
+      <div class="clearfix"></div>
+    </footer>
+    <!-- /footer content --> 
+  </div>
+</div>
+
+<!-- jQuery --> 
+<script src="js/jquery.min.js"></script> 
+<!-- Bootstrap --> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- DateJS --> 
+<script src="js/build/date.js"></script> 
+<!-- bootstrap-progressbar --> 
+<script src="js/bootstrap-progressbar.min.js"></script> 
+<!-- iCheck --> 
+<script src="js/icheck.min.js"></script> 
+<!-- bootstrap-daterangepicker --> 
+<script src="js/moment.min.js"></script> 
+<script src="js/daterangepicker.js"></script> 
+<!-- Custom Theme Scripts --> 
+<script src="js/custom.min.js"></script> 
+<!-- Datatables --> 
+<script src="js/jquery.dataTables.min.js"></script> 
+<script src="js/dataTables.bootstrap.min.js"></script> 
+<script src="js/dataTables.responsive.min.js"></script> 
+<script src="js/responsive.bootstrap.js"></script> 
+<script src="js/dataTables.scroller.min.js"></script>
+</body>
+</html>
